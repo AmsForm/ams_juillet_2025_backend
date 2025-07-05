@@ -5,10 +5,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity
+@Entity  // cela veut dire que cette classe doit être créer dans une table
 public class Provider {
 	
-	@Id
+	@Id  // cela veut dire c'est une clé primaire
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
